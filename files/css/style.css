@@ -565,7 +565,7 @@ nav li a {
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    height: 750px;
+    height: 910px;
   }
 }
 
@@ -762,4 +762,11 @@ body {
 .car-wraps {
   height: 750px;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .car-wraps {
+    height: auto;
+    object-fit: auto;
+  }
 }
