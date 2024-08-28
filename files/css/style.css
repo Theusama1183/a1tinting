@@ -565,7 +565,7 @@ nav li a {
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    height: 750px;
+    height: 910px;
   }
 }
 
@@ -667,7 +667,7 @@ td.border-0 {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .form-label {
   font-weight: 400;
@@ -762,4 +762,11 @@ body {
 .car-wraps {
   height: 750px;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .car-wraps {
+    height: auto;
+    object-fit: auto;
+  }
 }
