@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="files/css/style.css" />
+
+    <title>Home | G.O.A.T</title>
+  </head>
+  <body>
+    <div class="header fixed-top pb-4">
+      <nav class="navbar navbar-expand-xl bg-transparent mt-4">
+        <div class="container p-md-0">
+          <li class="nav-item px-3 list-unstyled">
+            <a class="navbar-brand text-primary mr-0 pl-0" href="/"
+              ><img
+                src="images/site-logo.png"
+                class="img-fluid logo-img"
+                width="200px"
+                alt=""
+            /></a>
+          </li>
+          <button
+            class="navbar-toggler"
+            type="submit"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarScroll"
+          >
+            <ul
+              class="navbar-nav w-100 align-items-center justify-content-end pb-4 pb-md-0"
+            >
+              <li class="nav-item px-2 active">
+                <a class="nav-link" href="/">HOME</a>
+              </li>
+
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#services">SERVICES</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#contact-us">CONTACT US</a>
+              </li>
+              <li class="nav-item mt-4 mt-md-0">
+                <a
+                  class="bg-white btn-shadow text-black py-3 py-md-4 px-4 px-md-4 mx-3"
+                  href="tel:+1-573-424-3163"
+                  ><svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="19" cy="19" r="19" fill="#E91110" />
+                    <path
+                      d="M28.8381 16.9704C28.8381 17.1344 28.704 17.2685 28.5401 17.2685C28.5371 17.2685 28.5371 17.2685 28.5341 17.2685H26.6177C26.4538 17.2685 26.3197 17.1344 26.3197 16.9704C26.3197 15.5577 25.7683 14.2285 24.7669 13.23C23.7655 12.2286 22.4362 11.6773 21.0265 11.6773C20.8626 11.6773 20.7284 11.5431 20.7284 11.3792V9.46283C20.7284 9.38236 20.7583 9.30785 20.8149 9.25122C20.8715 9.19459 20.946 9.16479 21.0265 9.16479C23.1068 9.16479 25.0679 9.97545 26.5432 11.4537C28.0036 12.9141 28.8172 14.8514 28.8321 16.9108C28.8351 16.9287 28.8381 16.9496 28.8381 16.9704ZM28.2927 25.4228C28.3284 26.2305 27.9589 27.1038 27.2764 27.8191C26.6773 28.445 25.9382 28.8354 25.3451 28.8354C25.3123 28.8354 25.2795 28.8354 25.2497 28.8324C24.0069 28.7489 20.7046 28.5254 15.0866 22.9104C9.47151 17.2923 9.24798 13.9901 9.16452 12.7472C9.12876 12.1869 9.45065 11.4865 10.0259 10.8785C10.7561 10.1006 11.68 9.6655 12.5741 9.70425C12.8095 9.71616 13.0271 9.84133 13.1553 10.041C13.4801 10.5596 14.4428 12.0945 15.0746 13.1019L15.5962 13.9304C15.6767 14.0526 15.7154 14.1987 15.7035 14.3417C15.6826 14.8067 15.3518 15.6084 14.717 16.7141C14.6544 16.8244 14.6425 16.9526 14.6872 17.0658L14.9048 17.3638C15.6826 18.4428 16.1535 19.0955 17.5275 20.4694C18.9015 21.8434 19.5542 22.3143 20.6331 23.0922L20.9281 23.3067C21.0444 23.3514 21.1785 23.3425 21.2888 23.2799C22.0338 22.8478 23.0561 22.3202 23.6611 22.2934C23.6671 22.2934 23.6969 22.2904 23.7029 22.2904C23.831 22.2904 23.9592 22.3292 24.0724 22.4037C24.6029 22.7375 27.2436 24.3946 27.9529 24.8387C28.1556 24.9698 28.2808 25.1874 28.2927 25.4228ZM20.1741 15.1822V13.4595C20.1741 13.2956 20.3082 13.1615 20.4721 13.1615C21.6375 13.1615 22.7313 13.6145 23.5568 14.4401C24.3675 15.2507 24.8175 16.3207 24.8354 17.4622C24.8384 17.4801 24.8414 17.5009 24.8414 17.5218C24.8414 17.6857 24.7073 17.8198 24.5434 17.8198C24.5404 17.8198 24.5404 17.8198 24.5374 17.8198H22.8117C22.6478 17.8198 22.5137 17.6857 22.5137 17.5218C22.5137 16.3982 21.5987 15.4802 20.4721 15.4802C20.3082 15.4802 20.1741 15.3491 20.1741 15.1822Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="ms-3">(573) 424-3163</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="content p-0">
+      <section class="section hero-section">
+        <div class="hero-text-wrapper py-100 d-md-flex align-items-center">
+          <div class="container hero-text-container position-relative">
+            <div class="row">
+              <div
+                class="col d-md-flex flex-column justify-content-center align-items-start position-relative"
+              >
+                <h1 class="text-white">Your Ride, Perfected</h1>
+                <h5
+                  class="text-quarternary text-white mt-3 w-md-75 mb-5 mb-md-0"
+                >
+                  At G.O.A.T Customs (Greatest Of All Transformations Customs),
+                  we are the masters of vehicle transformation, specializing in
+                  transformative car wraps. Whether you want a bold new look, a
+                  sleek finish, or a custom design, our wraps make your vehicle
+                  stand out like never before. Alongside our expert car
+                  wrapping, we offer protective PPF (Paint Protective Film),
+                  sleek window tinting, light bodywork, and personalized decals
+                  to enhance your car’s style and protection. When it comes to
+                  making a statement on the road, no one does it better than
+                  G.O.A.T Customs.
+                </h5>
+                <a
+                  href="tel:+1-573-424-3163"
+                  class="bg-primary btn-shadow text-white py-3 py-md-4 px-4 px-md-4 mt-4"
+                >
+                  +1-573-424-3163</a
+                >
+                <!-- <div class="d-flex align-items-center text-white mt-5">
+                  <span class="countSpan">01</span>
+                  <div id="Progress" class="mx-3">
+                    <div id="Bar"></div>
+                  </div>
+                  <span>05</span>
+                </div> -->
+                <!-- <img
+                  src="images/suzuki_PNG12298.png"
+                  class="img-fluid hero-car"
+                  alt=""
+                /> -->
+              </div>
+              <img
+                src="images/G.O.A.T TEXT.png"
+                class="img-fluid hero-text-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="text-center">
+                <h2>10+</h2>
+                <h3>Years in the Industry</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="text-center">
+                <h2>1500+</h2>
+                <h3>Satisfied Clients</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="text-center">
+                <h2>1200+</h2>
+                <h3>Vehicles Transformed</h3>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="text-center">
+                <h2>2500+</h2>
+                <h3>Custom Wraps and Decals Designed</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="images/image.png"
+                class="img-fluid w-100"
+                alt=""
+                id="video-btn"
+              />
+            </div>
+            <div
+              class="col-md-6 d-flex justify-content-center flex-column mt-4 mt-md-0"
+            >
+              <h2>Precision Wrapping & More by G.O.A.T Customs</h2>
+              <p class="text-body text-quarternary mt-3">
+                We elevate your vehicle's appearance and functionality at
+                G.O.A.T Customs (Greatest Of All Transformations Customs). Our
+                expert team specializes in more than just tinting—we offer
+                transformative car wraps, precision light bodywork, advanced
+                automotive enhancements, PPF (Paint Protective Film) for
+                ultimate protection, and unique decals that reflect your style.
+                Whether you want to protect your paint, reduce glare, or give
+                your car a complete makeover, we tailor our services to your
+                needs. Trust us to deliver top-tier results with unmatched
+                attention to detail.
+                <br />
+                Ready to transform your ride? Call
+                <a href="tel:+(573) 424-3163">(573) 424-3163</a> or book an
+                appointment online today!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center flex-column">
+              <h2>Transform Your Vehicle with Custom Car Wraps</h2>
+              <p class="text-body">
+                At G.O.A.T Customs (Greatest Of All Transformations Customs), we
+                take vehicle customization to the next level with our premium
+                car wrapping services. Whether you're looking to make a bold
+                statement on the road, protect your vehicle’s original paint, or
+                completely transform its appearance, our expert team delivers
+                top-tier wraps that exceed your expectations. <br />
+                Our car wraps are more than just aesthetic enhancements—they
+                provide additional protection against the elements, road debris,
+                and minor abrasions. With endless design possibilities, from
+                vibrant colors to intricate patterns and textures, you can fully
+                express your individuality and make your vehicle truly
+                one-of-a-kind. Why choose car wrapping?
+              </p>
+              <ul class="text-body">
+                <li>
+                  <strong>Unlimited Customization: </strong> Choose from various
+                  colors, finishes, and designs to create the perfect look for
+                  your car.
+                </li>
+                <li>
+                  <strong>Paint Protection: Safegu </strong>ard your vehicle’s
+                  original paint with a durable wrap that resists damage and
+                  fading.
+                </li>
+                <li>
+                  <strong>Cost-Effective Makeover: </strong> Achieve a stunning
+                  transformation without the expense or permanence of an entire
+                  paint job.
+                </li>
+                <li>
+                  <strong>Reversibility: Change yo </strong>ur vehicle’s
+                  appearance whenever desired, with no long-term commitment.
+                </li>
+              </ul>
+              <p class="text-body">
+                At G.O.A.T Customs, we specialize in creating the most
+                remarkable transformations. Let us wrap your vehicle with
+                precision and creativity, turning it into a masterpiece that
+                reflects your style and stands out on the road.
+              </p>
+            </div>
+            <div
+              class="col-md-6 d-flex justify-content-center flex-column mt-4 mt-md-0"
+            >
+              <img
+                src="images/personal-car-wraps.png"
+                class="img-fluid w-100 car-wraps"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 texture-background" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col text-white">
+              <h2 class="text-white text-center">Premium Car Wrapping</h2>
+              <p class="text-body text-white text-center mt-3">
+                Elevate your vehicle's appearance with our premium car wrapping
+                services. At G.O.A.T Customs, we offer a wide selection of
+                high-quality wraps that allow you to customize your car with
+                eye-catching colors, textures, and designs. Whether you're
+                looking to refresh your vehicle's look, protect its original
+                paint, or make a bold statement, our expertly applied wraps
+                provide a flawless finish that turns heads. Our wraps are
+                durable, weather-resistant, and completely reversible, giving
+                you the freedom to change your vehicle's style whenever you
+                like. Transform your car with G.O.A.T Customs and drive a ride
+                that’s uniquely yours.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-white">
+              <h2 class="text-white text-center">Our Services</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-4 px-0">
+          <!-- Tinting Section -->
+          <section class="services-section mt-5">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                    src="/images/auto-tinting.jpg"
+                    alt="Car Window Tinting"
+                    class="services-image img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="services-content text-white">
+                    <h2 class="services-title text-white">
+                      High-Quality Car Window Tinting
+                    </h2>
+                    <p class="services-description">
+                      Improve your vehicle's privacy, reduce harmful UV rays,
+                      and keep your car cooler with our professional car window
+                      tinting services. We offer a range of tints tailored to
+                      your preferences, ensuring both aesthetic appeal and
+                      practical benefits.
+                    </p>
+                    <br />
+                    <div class="">
+                      <a
+                        href="tel:+1-573-424-3163"
+                        class="bg-primary btn-shadow text-white py-3 py-md-4 px-4 px-md-4 mt-4"
+                      >
+                        +1-573-424-3163</a
+                      >
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <a
+                        href="#contact-us"
+                        class="bg-white btn-shadow text-primary py-3 py-md-4 px-5 mt-4"
+                      >
+                        Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Paint Protective Film Section -->
+          <section class="services-section mt-5">
+            <div class="container">
+              <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                    src="/images/ppf.jpg"
+                    alt="Paint Protection Film"
+                    class="services-image img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="services-content text-white">
+                    <h2 class="services-title text-white">
+                      Durable Paint Protection Film (PPF)
+                    </h2>
+                    <p class="services-description">
+                      Protect your car's paint from chips, scratches, and
+                      environmental damage with our high-quality Paint
+                      Protection Film (PPF). Our PPF services provide a
+                      virtually invisible barrier that maintains your vehicle's
+                      showroom shine while offering superior protection.
+                    </p>
+                    <br />
+                    <div class="">
+                      <a
+                        href="tel:+1-573-424-3163"
+                        class="bg-primary btn-shadow text-white py-3 py-md-4 px-4 px-md-4 mt-4"
+                      >
+                        +1-573-424-3163</a
+                      >
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <a
+                        href="#contact-us"
+                        class="bg-white btn-shadow text-primary py-3 py-md-4 px-5 mt-4"
+                      >
+                        Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Light Body Work Section -->
+          <section class="services-section mt-5">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                    src="/images/light-body-work.jpg"
+                    alt="Light Auto Body Repair"
+                    class="services-image img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="services-content text-white">
+                    <h2 class="services-title text-white">
+                      Expert Light Auto Body Repair
+                    </h2>
+                    <p class="services-description">
+                      Restore your vehicle's appearance with our expert light
+                      auto body repair services. From minor dents to cosmetic
+                      touch-ups, our skilled technicians use advanced techniques
+                      to deliver seamless repairs that blend perfectly with your
+                      vehicle's original finish.
+                    </p>
+                    <br />
+                    <div class="">
+                      <a
+                        href="tel:+1-573-424-3163"
+                        class="bg-primary btn-shadow text-white py-3 py-md-4 px-4 px-md-4 mt-4"
+                      >
+                        +1-573-424-3163</a
+                      >
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <a
+                        href="#contact-us"
+                        class="bg-white btn-shadow text-primary py-3 py-md-4 px-5 mt-4"
+                      >
+                        Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Decals Section -->
+          <section class="services-section mt-5">
+            <div class="container">
+              <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                    src="/images/custom-decals.jpg"
+                    alt="Custom Vehicle Decals"
+                    class="services-image img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="services-content text-white">
+                    <h2 class="services-title text-white">
+                      Custom Vehicle Decals
+                    </h2>
+                    <p class="services-description">
+                      Make your vehicle truly unique with our custom vehicle
+                      decals. Whether you're looking to promote your business,
+                      express your personal style, or add some flair, we design
+                      and install high-quality decals that stand out. Durable,
+                      weather-resistant, and completely customizable to your
+                      needs.
+                    </p>
+                    <br />
+                    <div class="">
+                      <a
+                        href="tel:+1-573-424-3163"
+                        class="bg-primary btn-shadow text-white py-3 py-md-4 px-4 px-md-4 mt-4"
+                      >
+                        +1-573-424-3163</a
+                      >
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <a
+                        href="#contact-us"
+                        class="bg-white btn-shadow text-primary py-3 py-md-4 px-5 mt-4"
+                      >
+                        Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Digital Edits Section -->
+          <section class="services-section mt-5">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                    src="/images/digital-edits.jpg"
+                    alt="Professional Digital Car Edits"
+                    class="services-image img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="services-content text-white">
+                    <h2 class="services-title text-white">
+                      Professional Digital Car Edits
+                    </h2>
+                    <p class="services-description">
+                      Visualize your car's transformation with our professional
+                      digital car edits. We offer detailed previews of how
+                      different wraps, colors, and designs will look on your
+                      vehicle, allowing you to make informed decisions before
+                      committing to any physical changes.
+                    </p>
+                    <br />
+                    <div class="">
+                      <a
+                        href="tel:+1-573-424-3163"
+                        class="bg-primary btn-shadow text-white py-3 py-md-4 px-4 px-md-4 mt-4"
+                      >
+                        +1-573-424-3163</a
+                      >
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <br class="d-block d-md-none" />
+                      <a
+                        href="#contact-us"
+                        class="bg-white btn-shadow text-primary py-3 py-md-4 px-5 mt-4"
+                      >
+                        Contact Us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center">Why Choose Us</h2>
+          <div class="row mt-4">
+            <div class="col-md-4 mt-2">
+              <div class="card p-4">
+                <div class="card-body text-center">
+                  <img src="images/Group 37365.png" class="m-auto" alt="" />
+                  <h5 class="card-title">Expert Craftsmanship</h5>
+                  <p class="card-text">
+                    With years of experience, our skilled technicians ensure
+                    flawless finishes and meticulous attention to detail every
+                    time.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <div class="card p-4">
+                <div class="card-body text-center">
+                  <img src="images/Group 37360.png" class="m-auto" alt="" />
+                  <h5 class="card-title">Premium Materials</h5>
+                  <p class="card-text">
+                    We use only the highest quality films, wraps, and PPF,
+                    ensuring durability, longevity, and a perfect fit for your
+                    vehicle.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <div class="card p-4">
+                <div class="card-body text-center">
+                  <img src="images/Group 37363.png" class="m-auto" alt="" />
+                  <h5 class="card-title">Fast Turnaround</h5>
+                  <p class="card-text">
+                    We understand your time is valuable. That’s why we offer
+                    quick, efficient service without compromising on quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 mt-2">
+              <div class="card p-4">
+                <div class="card-body text-center">
+                  <img src="images/Group 37367.png" class="m-auto" alt="" />
+                  <h5 class="card-title">Customer Satisfaction</h5>
+                  <p class="card-text">
+                    Our commitment to excellence guarantees your satisfaction.
+                    We won’t rest until you’re thrilled with the results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <div class="card p-4">
+                <div class="card-body text-center">
+                  <img src="images/Group 37367.png" class="m-auto" alt="" />
+                  <h5 class="card-title">Custom Solutions</h5>
+                  <p class="card-text">
+                    Whether it’s a full vehicle wrap, protective film, or unique
+                    decals, we provide personalized solutions tailored to your
+                    vision.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </section>
+      <section class="py-md-5">
+        <div class="container">
+          <div class="row gap-0">
+            <div class="col-md-4 p-0">
+              <img src="images/pimage.png" class="img-fluid h-100" alt="" />
+            </div>
+            <div class="col-md-8 py-5 p-md-0 texture-background">
+              <div class="table-responsive p-md-5">
+                <table class="table text-white">
+                  <tr>
+                    <td class="pb-4 border-0">
+                      <h3 class="text-decoration-underline text-white mb-3">
+                        G.O.A.T
+                      </h3>
+                      <p class="mb-1">shaheem.hicks@gmail.com</p>
+                      <p class="mb-1">Call Now : (573) 424-3163</p>
+                    </td>
+                    <td class="pb-4 text-end border-0">
+                      <p class="mb-1">Residential</p>
+                      <p class="mb-1">Automotive</p>
+                      <p class="mb-1">Commercial</p>
+                      <p class="mb-1">Motorsport</p>
+                      <p class="mb-1">Innovation</p>
+                    </td>
+                  </tr>
+                </table>
+
+                <hr class="border-white opacity-1 bg-white" />
+
+                <table class="table text-white mt-4" contenteditable="true">
+                  <tr>
+                    <td class="border-0">
+                      <h2 class="text-white m-0">Tinting Prices</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Small Car / per window</td>
+                    <td class="border-0 text-end">$ 170</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Medium Car / per window</td>
+                    <td class="border-0 text-end">$ 180</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Large Car or SUV / per window</td>
+                    <td class="border-0 text-end">$ 190</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Window Tint Removal</td>
+                    <td class="border-0 text-end">$15*</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Windshield Tint Removal</td>
+                    <td class="border-0 text-end">$ 25*</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Single Window Tint</td>
+                    <td class="border-0 text-end">$ 30</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Single Windshield Tint</td>
+                    <td class="border-0 text-end">$ 50</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">
+                      <h2 class="text-white m-0">Wrap Prices</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Full body Small / Med Wrap</td>
+                    <td class="border-0 text-end">$ 2800 - 3000</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Full Size Vehicle / Truck Wrap</td>
+                    <td class="border-0 text-end">$ 3500 - 5000</td>
+                  </tr>
+                  <tr>
+                    <td class="border-0">Pinstripe-</td>
+                    <td class="border-0 text-end">$150 - 250</td>
+                  </tr>
+                </table>
+              </div>
+              <p class="text-white text-center text-body">
+                Price varies by type of wrap and length
+              </p>
+              <hr class="border-white m-5 opacity-1 bg-white" />
+
+              <div class="px-5">
+                <div class="text-center">
+                  <a href="#" title="Facebook">
+                    <img src="images/facebook-redish-icon.png" alt="" />
+                  </a>
+                  <a href="#" title="Instagram">
+                    <img src="images/Instagram-redish-icon.png" alt="" />
+                  </a>
+                  <a href="#" title="Youtube">
+                    <img src="images/youtube-redish-icon.png" alt="" />
+                  </a>
+                  <div class="mt-3 mb-5">
+                    <a
+                      href="https://www.A1tinting.com"
+                      title="Website"
+                      class="text-white text-center text-body"
+                      >www.A1tinting.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5" style="background-color: #e2e2e2" id="contact-us">
+        <div class="container">
+          <h2 class="text-center mb-5">Don’t Wait Let’s Connect</h2>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-wrapper">
+                <form action="form.php" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="fname" class="form-label mb-1"
+                        >First Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="fname"
+                        class="form-control rounded-0"
+                        placeholder="First Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="lname" class="form-label mb-1"
+                        >Last Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="lname"
+                        class="form-control rounded-0"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mt-4">
+                      <label for="email" class="form-label mb-1"
+                        >Email <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="email"
+                        class="form-control rounded-0"
+                        placeholder="Email Address"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mt-4">
+                      <label for="Number" class="form-label mb-1"
+                        >Contact Number</label
+                      >
+                      <input
+                        type="text"
+                        name="Number"
+                        class="form-control rounded-0"
+                        placeholder="Contact Number"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-4">
+                      <label for="Vehicle_Make" class="form-label mb-1"
+                        >Vehicle Make</label
+                      >
+                      <input
+                        type="text"
+                        name="Vehicle_Make"
+                        class="form-control rounded-0"
+                        placeholder="Vehicle Make"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-4">
+                      <label for="Vehicle_Model" class="form-label mb-1"
+                        >Vehicle Model</label
+                      >
+                      <input
+                        type="text"
+                        name="Vehicle_Model"
+                        class="form-control rounded-0"
+                        placeholder="Vehicle Model"
+                      />
+                    </div>
+                    <div class="col-12 mt-4">
+                      <label for="message" class="form-label mb-1"
+                        >Message</label
+                      >
+                      <textarea
+                        name="message"
+                        class="form-control rounded-0"
+                        placeholder="Message"
+                        rows="6"
+                        cols="50"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4 text-center">
+                    <button
+                      type="submit"
+                      class="btn rounded-0 bg-primary py-3 py-md-4 px-5 text-white"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer text-black">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-4">
+            <img src="images/G.O.A.T.png" alt="G.O.A.T Logo" width="200px" />
+            <div>
+              <p class="mb-0 mt-4 text-body text-black">
+                Enhancing your vehicle’s look and protection with precision and
+                style. From tinting to wraps, PPF, and more—we've got your ride
+                covered.
+              </p>
+            </div>
+
+            <div class="mt-5">
+              <h5 class="fw-bold text-black mt-4 mt-md-0">Subscribe Now</h5>
+              <form action="form.php" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  class="border-0 form-control rounded-0 px-0"
+                  placeholder="Email address"
+                />
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="fw-bold text-black mt-4 mt-md-0">Contact Us</h5>
+            <ul class="list-unstyled mt-3">
+              <a class="text-body text-black" href="#">
+                <li class="mt-3 border-bottom border-black pb-3">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 11.6833V14.6301C15.5 15.0676 15.1617 15.4306 14.7254 15.4614C14.3609 15.4872 14.0636 15.5 13.8333 15.5C6.4695 15.5 0.5 9.5305 0.5 2.16667C0.5 1.93642 0.512875 1.63906 0.538625 1.27458C0.569475 0.838233 0.93245 0.5 1.36988 0.5H4.31675C4.53065 0.5 4.7098 0.662017 4.73127 0.874833C4.75056 1.06589 4.76848 1.21928 4.78506 1.33502C4.95362 2.51227 5.29794 3.6328 5.79058 4.66919C5.86966 4.83554 5.81809 5.03466 5.66821 5.14172L3.86962 6.4265C4.9646 8.98425 7.01575 11.0354 9.5735 12.1304L10.8559 10.3349C10.9643 10.1832 11.1658 10.1311 11.3342 10.211C12.3705 10.7032 13.4909 11.0472 14.668 11.2153C14.783 11.2318 14.9354 11.2496 15.1252 11.2687C15.338 11.2902 15.5 11.4694 15.5 11.6833Z"
+                      fill="black"
+                    />
+                  </svg>
+
+                  <span class="ms-4">(573) 424-3163</span>
+                </li></a
+              >
+              <a class="text-body text-black" href="#">
+                <li class="mt-3 border-bottom border-black pb-3">
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.50008 0.5H16.5001C16.9603 0.5 17.3334 0.8731 17.3334 1.33333V14.6667C17.3334 15.1269 16.9603 15.5 16.5001 15.5H1.50008C1.03985 15.5 0.666748 15.1269 0.666748 14.6667V1.33333C0.666748 0.8731 1.03985 0.5 1.50008 0.5ZM9.05058 7.73575L3.7061 3.19808L2.6274 4.46858L9.061 9.93092L15.3787 4.46347L14.2881 3.2032L9.05058 7.73575Z"
+                      fill="black"
+                    />
+                  </svg>
+
+                  <span class="ms-4">A1tinting@gmail.com</span>
+                </li></a
+              >
+              <a class="text-body text-black" href="#">
+                <li class="mt-3 border-bottom border-black pb-3">
+                  <svg
+                    width="16"
+                    height="19"
+                    viewBox="0 0 16 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.3033 13.4698L8 18.7731L2.6967 13.4698C-0.232233 10.5408 -0.232233 5.79214 2.6967 2.8632C5.62563 -0.0657294 10.3743 -0.0657294 13.3033 2.8632C16.2323 5.79214 16.2323 10.5408 13.3033 13.4698ZM8 11.4998C9.84092 11.4998 11.3333 10.0074 11.3333 8.1665C11.3333 6.32555 9.84092 4.83317 8 4.83317C6.15905 4.83317 4.66667 6.32555 4.66667 8.1665C4.66667 10.0074 6.15905 11.4998 8 11.4998ZM8 9.83317C7.0795 9.83317 6.33333 9.087 6.33333 8.1665C6.33333 7.24603 7.0795 6.49984 8 6.49984C8.9205 6.49984 9.66667 7.24603 9.66667 8.1665C9.66667 9.087 8.9205 9.83317 8 9.83317Z"
+                      fill="black"
+                    />
+                  </svg>
+
+                  <span class="ms-4">location here</span>
+                </li></a
+              >
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold text-black mt-4 mt-md-0">Follow Us</h5>
+            <div class="mt-3">
+              <a href="#" title="Facebook">
+                <img src="images/facebook-redish-icon.png" alt="" />
+              </a>
+              <a href="#" title="Instagram">
+                <img src="images/Instagram-redish-icon.png" alt="" />
+              </a>
+              <a href="#" title="Youtube">
+                <img src="images/youtube-redish-icon.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="text-center py-3 border-top border-black">
+            <p class="mb-0 text-black">
+               Copyright © 2024. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="files/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
